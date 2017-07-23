@@ -1,0 +1,37 @@
+{
+  "name": "entertainer-login",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack -p",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.0"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "backbone.marionette": "^3.3.1",
+    "backbone.radio": "^2.0.0",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "handlebars": "^4.0.10",
+    "handlebars-loader": "^1.5.0",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "morgan": "~1.8.1",
+    "pug": "^2.0.0-rc.2",
+    "serve-favicon": "~2.4.2"
+  }
+}
