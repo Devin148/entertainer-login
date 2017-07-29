@@ -6,9 +6,15 @@ head
     link(href="css/app.css",rel="stylesheet")
 
 body
-    #app
+    #sidebar
+        a(id="employees", href="#employees") EMPLOYEES
+        a(id="reports", href="#reports") REPORTS
+
+    #content
+        #app
 
     script(src="js/lib/jquery.min.js")
+    script(src="js/lib/jquery.serializeObject.js")
     script(src="js/lib/lodash.min.js")
     script(src="js/lib/handlebars.min.js")
     script(src="js/lib/backbone-min.js")

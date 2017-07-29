@@ -1,0 +1,16 @@
+<navbar>
+	<a href="#employees/{{ id }}" class="active">Information</a>
+	<a href="#employees/{{ id }}/payroll">Payroll</a>
+</navbar>
+
+<h1>{{ first }} {{ last }}</h1>
+
+<form id="employee_info_form">
+	<input type="text" name="first" value="{{ first }}" />
+	<input type="text" name="last" value="{{ last }}" />
+	<input type="text" name="stage" value="{{ stage }}" />
+	<input type="text" name="employeeId" value="{{ employeeId }}" />
+	<input type="checkbox" name="active" {{#if active}}checked{{/if}} />
+
+	<button>Update</button>
+</form>

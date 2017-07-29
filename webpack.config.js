@@ -36,6 +36,7 @@ module.exports = [{
   plugins: [
   new CopyWebpackPlugin([
     { from: 'node_modules/jquery/dist/jquery.min.js', to: 'lib' },
+    { from: 'node_modules/jquery-serializeobject/jquery.serializeObject.js', to: 'lib' },
     { from: 'node_modules/lodash/lodash.min.js', to: 'lib' },
     { from: 'node_modules/handlebars/dist/handlebars.min.js', to: 'lib' },
     { from: 'node_modules/backbone/backbone-min.js', to: 'lib' },

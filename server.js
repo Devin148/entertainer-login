@@ -22,6 +22,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // Setup routes
+const api = require('./routes/api');
+app.use('/api', api);
+
 const index = require('./routes/index');
 app.use('/', index);
 
