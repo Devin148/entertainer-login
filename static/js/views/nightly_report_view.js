@@ -13,12 +13,12 @@ export default Marionette.View.extend({
     },
 
     ui: {
-    	form: '#nightly_report_form',
-    	datePicker: '#report_date',
+        form: '#nightly_report_form',
+        datePicker: '#report_date',
     },
 
     triggers: {
-     	'submit @ui.form': 'populate:nightly'
+        'submit @ui.form': 'populate:nightly'
     },
 
     getFormData() {

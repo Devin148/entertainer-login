@@ -10,8 +10,8 @@ export default Marionette.View.extend({
     },
 
     onRender() {
-    	$('#sidebar a').removeClass('active');
-    	$('#sidebar #employees').addClass('active');
+        $('#sidebar a').removeClass('active');
+        $('#sidebar #employees').addClass('active');
     }
 
 });

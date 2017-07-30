@@ -7,24 +7,24 @@ router.get('/', (req, res, next) => {
 
 router.get('/employees', (req, res, next) => {
     res.json([
-    	{
-    		'id': 111,
-    		'first': 'Jane',
-    		'last': 'Doe',
-    		'stage': 'The female deer',
-    		'employeeId': 111,
-    		'dob': 'tbd',
-    		'active': true,
-    	},
-    	{
-    		'id': 222,
-    		'first': 'John',
-    		'last': 'Doe',
-    		'stage': 'Lil Johnny Doughboy',
-    		'employeeId': 222,
-    		'dob': 'tbd',
-    		'active': true,
-    	},
+        {
+            'id': 111,
+            'first': 'Jane',
+            'last': 'Doe',
+            'stage': 'The female deer',
+            'employeeId': 111,
+            'dob': 'tbd',
+            'active': true,
+        },
+        {
+            'id': 222,
+            'first': 'John',
+            'last': 'Doe',
+            'stage': 'Lil Johnny Doughboy',
+            'employeeId': 222,
+            'dob': 'tbd',
+            'active': true,
+        },
         {
             'id': 333,
             'first': 'Smith',
@@ -56,7 +56,7 @@ router.get('/employees', (req, res, next) => {
 });
 
 router.put('/employees', (req, res, next) => {
-	res.sendStatus(200);
+    res.sendStatus(200);
 });
 
 router.get('/timecards', (req, res, next) => {
