@@ -35,9 +35,11 @@ module.exports = [{
   },
   plugins: [
   new CopyWebpackPlugin([
+    { from: 'static/js/lib', to: 'lib' },
     { from: 'node_modules/jquery/dist/jquery.min.js', to: 'lib' },
     { from: 'node_modules/jquery-serializeobject/jquery.serializeObject.js', to: 'lib' },
     { from: 'node_modules/lodash/lodash.min.js', to: 'lib' },
+    { from: 'node_modules/moment/min/moment.min.js', to: 'lib' },
     { from: 'node_modules/handlebars/dist/handlebars.min.js', to: 'lib' },
     { from: 'node_modules/backbone/backbone-min.js', to: 'lib' },
     { from: 'node_modules/backbone.radio/build/backbone.radio.min.js', to: 'lib' },
@@ -67,6 +69,7 @@ module.exports = [{
   new ExtractTextPlugin('./dist/css/app.css'),
   new CopyWebpackPlugin([
     { from: './static/images', to: './dist/images' },
+    { from: './static/css/lib', to: './dist/css/lib' },
     ])
   ]
 }];
