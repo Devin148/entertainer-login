@@ -1,9 +1,25 @@
 #employee_list {
 	float: left;
-	background: #f5f5f5;
+	background: @lightGray;
 	height: 100%;
 	width: 30%;
+	padding: 25px 15px;
 	box-sizing: border-box;
+
+	a {
+		display: inline-block;
+		color: @lightTextColor;
+		width: 100%;
+		margin: 2px 0;
+		padding: 5px 10px;
+		border-radius: 3px;
+		box-sizing: border-box;
+
+		&:hover {
+			background: @lightGreen;
+			color: @white;
+		}
+	}
 }
 
 #employee_management {
@@ -12,14 +28,6 @@
 	width: 70%;
 	padding: 25px;
 	box-sizing: border-box;
-
-	navbar {
-		a {
-			&.active {
-				color: red;
-			}
-		}
-	}
 }
 
 #employee_info_form {
@@ -28,17 +36,23 @@
 	[type=text] {
 		margin: 5px 5px 0 0;
 		padding: 5px;
-		border: 1px solid #f5f5f5;
+		border: 1px solid @lightGray;
 		border-radius: 3px;
 	}
 
 	button {
 		display: block;
-		background: #36d877;
-		color: #ffffff;
+		background: @lightGreen;
+		color: @white;
+		font-size: 14px;
 		margin: 5px 5px 0 0;
 		padding: 10px 25px;
 		border: 0;
 		border-radius: 3px;
+		cursor: pointer;
+
+		&:hover {
+			background: @darkGreen;
+		}
 	}
 }
